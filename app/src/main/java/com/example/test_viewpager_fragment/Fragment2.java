@@ -1,5 +1,8 @@
 package com.example.test_viewpager_fragment;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,18 +12,20 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class Fragment2 extends Fragment{
 
-	ListView listView;
-	String[] titles={"标题1","标题2","标题3","标题4"};
-	String[] texts={"文本内容A","文本内容B","文本内容C","文本内容D"};
-	int[] resIds={R.drawable.qq,R.drawable.qq,R.drawable.qq,R.drawable.qq};
+
+	private ListView listView;
 
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,64 +33,44 @@ public class Fragment2 extends Fragment{
 		// TODO Auto-generated method stub
 		View view=inflater.inflate(R.layout.layout2, container, false);
 
-		listView=(ListView)view.findViewById(R.id.MyListView);
-		listView.setAdapter(new ListViewAdapter(titles,texts,resIds));
+		/*listView=(ListView)view.findViewById(R.id.MyListView);
+		listView.setAdapter(new ListViewAdapter(titles,texts,resIds));*/
+		listView = (ListView)view.findViewById(R.id.MyListView);
+		List<Map<String, Object>> list=getData();
+		listView.setAdapter(new ListViewAdapter(getActivity(), list));
+
+
+		listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+									long arg3) {
+				// TODO Auto-generated method stub
+
+					startActivity(new Intent(getActivity(), detail.class));
+
+			}
+
+		});
+
+
 
 		return view;
 	}
 
-
-	public class ListViewAdapter extends BaseAdapter {
-		View[] itemViews;
-
-		public ListViewAdapter(String[] itemTitles, String[] itemTexts,
-							   int[] itemImageRes) {
-			itemViews = new View[itemTitles.length];
-
-			for (int i = 0; i < 4; i++) {
-				itemViews[i] = makeItemView(itemTitles[i], itemTexts[i],
-						itemImageRes[i]);
-			}
+	public List<Map<String, Object>> getData(){
+		List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
+		for (int i = 0; i < 10; i++) {
+			Map<String, Object> map=new HashMap<String, Object>();
+			map.put("image", R.drawable.ic_launcher);
+			map.put("title", "这是一个标题"+i);
+			map.put("info", "这是一个详细信息" + i);
+			list.add(map);
 		}
-
-		public int getCount() {
-			return itemViews.length;
-		}
-
-		public View getItem(int position) {
-			return itemViews[position];
-		}
-
-		public long getItemId(int position) {
-			return position;
-		}
-
-		private View makeItemView(String strTitle, String strText, int resId) {
-
-			LayoutInflater inflater = LayoutInflater.from(getActivity());
-
-
-			// 使用View的对象itemView与R.layout.item关联
-			View itemView = inflater.inflate(R.layout.item, null);
-
-
-			// 通过findViewById()方法实例R.layout.item内各组件
-			TextView title = (TextView) itemView.findViewById(R.id.itemTitle);
-			title.setText(strTitle);
-			TextView text = (TextView) itemView.findViewById(R.id.itemText);
-			text.setText(strText);
-			ImageView image = (ImageView) itemView.findViewById(R.id.itemImage);
-			image.setImageResource(resId);
-
-			return itemView;
-		}
-
-		public View getView(int position, View convertView, ViewGroup parent) {
-			if (convertView == null)
-				return itemViews[position];
-			return convertView;
-		}
+		return list;
 	}
+
+
 
 
 }

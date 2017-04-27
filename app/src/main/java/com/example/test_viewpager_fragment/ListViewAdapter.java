@@ -1,6 +1,7 @@
 package com.example.test_viewpager_fragment;
 
 import android.content.Context;
+import android.content.pm.LauncherApps;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 import java.util.List;
 import java.util.Map;
 
+
+
 /**
  * Created by sks on 2017/4/23.
  */
@@ -21,10 +24,13 @@ public class ListViewAdapter extends BaseAdapter {
     private List<Map<String, Object>> data;
     private LayoutInflater layoutInflater;
     private Context context;
-    public ListViewAdapter(Context context,List<Map<String, Object>> data){
+    private MyClickListener mListener;
+
+    public ListViewAdapter(Context context,List<Map<String, Object>> data,MyClickListener listener){
         this.context=context;
         this.data=data;
         this.layoutInflater=LayoutInflater.from(context);
+        this.mListener = listener;
     }
     /**
      * 组件集合，对应list.xml中的控件
@@ -75,7 +81,23 @@ public class ListViewAdapter extends BaseAdapter {
         zujian.image.setBackgroundResource((Integer)data.get(position).get("image"));
         zujian.title.setText((String)data.get(position).get("title"));
         zujian.info.setText((String)data.get(position).get("info"));
+        zujian.view.setOnClickListener(mListener);
+        zujian.view.setTag(position);
         return convertView;
+    }
+
+    /**
+     * 用于回调的抽象类
+     */
+    public static abstract class MyClickListener implements View.OnClickListener {
+        /**
+         * 基类的onClick方法
+         */
+        @Override
+        public void onClick(View v) {
+            myOnClick((Integer) v.getTag(), v);
+        }
+        public abstract void myOnClick(int position, View v);
     }
 
 }

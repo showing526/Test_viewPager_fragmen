@@ -22,10 +22,11 @@ import java.util.List;
 import java.util.Map;
 
 
-public class Fragment2 extends Fragment{
+public class Fragment2 extends Fragment implements AdapterView.OnItemClickListener {
 
 
 	private ListView listView;
+	List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
 
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -37,10 +38,11 @@ public class Fragment2 extends Fragment{
 		listView.setAdapter(new ListViewAdapter(titles,texts,resIds));*/
 		listView = (ListView)view.findViewById(R.id.MyListView);
 		List<Map<String, Object>> list=getData();
-		listView.setAdapter(new ListViewAdapter(getActivity(), list));
+		listView.setAdapter(new ListViewAdapter(getActivity(), list,mListener));
+		//listView.setOnItemClickListener(getActivity());
 
 
-		listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+		/*listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
@@ -51,15 +53,13 @@ public class Fragment2 extends Fragment{
 
 			}
 
-		});
-
-
+		});*/
 
 		return view;
 	}
 
 	public List<Map<String, Object>> getData(){
-		List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
+
 		for (int i = 0; i < 10; i++) {
 			Map<String, Object> map=new HashMap<String, Object>();
 			map.put("image", R.drawable.ic_launcher);
@@ -69,6 +69,29 @@ public class Fragment2 extends Fragment{
 		}
 		return list;
 	}
+
+	//响应item点击事件
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {
+		Toast.makeText(getActivity(), "listview的item被点击了！，点击的位置是-->" + position,
+				Toast.LENGTH_SHORT).show();
+	}
+
+	/**
+	 * 实现类，响应按钮点击事件
+	 */
+	private ListViewAdapter.MyClickListener mListener = new ListViewAdapter.MyClickListener() {
+		@Override
+		public void myOnClick(int position, View v) {
+			Toast.makeText(
+					getActivity(),
+					"listview的内部的按钮被点击了！，位置是-->" + position + ",内容是-->"
+							+ list.get(position), Toast.LENGTH_SHORT)
+					.show();
+
+			startActivity(new Intent(getActivity(), detail.class));
+		}
+	};
 
 
 

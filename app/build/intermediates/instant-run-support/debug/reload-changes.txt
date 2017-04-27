@@ -1,11 +1,2 @@
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\R$layout$override.class
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\Fragment1$override.class
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\MainActivity$override.class
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\Fragment2$override.class
 CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\ListViewAdapter$override.class
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\Fragment3$override.class
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\R$menu$override.class
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\R$style$override.class
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\R$id$override.class
-CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\R$string$override.class
+CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\Fragment2$1$override.class

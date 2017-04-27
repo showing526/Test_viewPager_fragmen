@@ -17,7 +17,7 @@ public class Fragment1 extends Fragment {
 		// TODO Auto-generated method stub
 		View view= inflater.inflate(R.layout.layout1, container, false);
 		
-		//��View�пؼ��Ĳ�������
+		/*
 		Button btn = (Button)view.findViewById(R.id.fragment1_btn);
 		btn.setOnClickListener(new View.OnClickListener() {
 			
@@ -28,7 +28,7 @@ public class Fragment1 extends Fragment {
 
 
 			}
-		});
+		});*/
 		return view;
 	}
 }

@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".detail"></activity>
+        <activity android:name=".get"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:2:1-28:12
+ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:3:5-50
 		INJECTED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml
@@ -27,7 +27,7 @@ MERGED from [com.android.support:support-v4:23.0.1] D:\android2\Test_viewPager_f
 		INJECTED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml
 		INJECTED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:11:5-26:19
+ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:11:5-27:19
 MERGED from [com.android.support:support-v4:23.0.1] D:\android2\Test_viewPager_fragment\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:14:9-41
@@ -57,3 +57,7 @@ activity#com.example.test_viewpager_fragment.detail
 ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:25:9-53
 	android:name
 		ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:25:19-41
+activity#com.example.test_viewpager_fragment.get
+ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:26:9-50
+	android:name
+		ADDED from D:\android2\Test_viewPager_fragment\app\src\main\AndroidManifest.xml:26:19-38

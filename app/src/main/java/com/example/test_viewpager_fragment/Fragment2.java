@@ -61,6 +61,7 @@ public class Fragment2 extends Fragment{
 	public List<Map<String, Object>> getData(){
 		List<Map<String, Object>> list=new ArrayList<Map<String,Object>>();
 		for (int i = 0; i < 10; i++) {
+
 			Map<String, Object> map=new HashMap<String, Object>();
 			map.put("image", R.drawable.ic_launcher);
 			map.put("title", "这是一个标题"+i);

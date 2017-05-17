@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.test_viewpager_fragment.detail" />
+        <activity android:name="com.example.test_viewpager_fragment.get" />
     </application>
 
 </manifest>

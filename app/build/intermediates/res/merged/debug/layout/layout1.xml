@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/bg1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/layout1">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -217,7 +218,11 @@
 
             <LinearLayout
                 android:layout_width="fill_parent"
+<<<<<<< Updated upstream
                 android:layout_height="44dp"
+=======
+                android:layout_height="400dp"
+>>>>>>> Stashed changes
                 android:gravity="center_vertical"
                 android:orientation="horizontal" >
 
@@ -238,8 +243,59 @@
                     android:id="@+id/dateAndTimePicker_datePicker"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+<<<<<<< Updated upstream
                     android:calendarViewShown="false"
                     />
+=======
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开始日期" />
+
+                        <DatePicker
+                            android:id="@+id/datePickerStart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:calendarViewShown="false" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/background_light" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="5dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开始时间" />
+
+                        <TimePicker
+                            android:id="@+id/datePickerEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:calendarViewShown="false" />
+                    </LinearLayout>
+
+                </LinearLayout>
+>>>>>>> Stashed changes
 
             </LinearLayout>
 

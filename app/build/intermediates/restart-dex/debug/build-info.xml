@@ -4,26 +4,45 @@
     api-level="19"
     density="xhdpi"
     format="7"
+<<<<<<< Updated upstream
     timestamp="14429645430510" >
 
     <task
         name="javac"
         duration="58455" />
+=======
+    timestamp="8348241785601" >
+
+    <task
+        name="javac"
+        duration="362" />
+>>>>>>> Stashed changes
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
+<<<<<<< Updated upstream
         duration="14320" />
     <task
         name="verifier"
         duration="5293" />
+=======
+        duration="184" />
+    <task
+        name="verifier"
+        duration="42" />
+>>>>>>> Stashed changes
 
     <artifact
         location="D:\android2\Test_viewPager_fragment\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
+<<<<<<< Updated upstream
     <build timestamp="14429645430510" >
+=======
+    <build timestamp="8348241785601" >
+>>>>>>> Stashed changes
         <artifact
             location="D:\android2\Test_viewPager_fragment\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />

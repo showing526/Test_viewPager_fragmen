@@ -1,3 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\android2\Test_viewPager_fragment\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="D:\android2\Test_viewPager_fragment\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_e0fcacbac922dc30ca154d7284abf6ea5c3f7604.jar" />
+    </item>
+    <item
+        jar="D:\android2\Test_viewPager_fragment\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="bcd08bbf95f4b77984ab801566eb50c5dbdb1c64">
+        <dex dex="D:\android2\Test_viewPager_fragment\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_40372818e78c9eca22e4fd5bc010f9833d1390d7.jar" />
+    </item>
+    <item
+        jar="D:\android2\Test_viewPager_fragment\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="a279b9a66e86dbad3049887c1dfacee7b7c56e2a">
+        <dex dex="D:\android2\Test_viewPager_fragment\app\build\intermediates\pre-dexed\debug\instant-run_331ae549ecbc45c80c4481efb2a71327e2300fda.jar" />
+    </item>
+    <item
+        jar="C:\Users\sks\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="D:\android2\Test_viewPager_fragment\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_454cd133a7a89ca4f030c7ea64270252eb1b8aaf.jar" />
+    </item>
+    <item
+        jar="D:\android2\Test_viewPager_fragment\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="D:\android2\Test_viewPager_fragment\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_3d25fbdb699170b9d002d8cf059dba57eaf3e939.jar" />
+    </item>
+
+</items>

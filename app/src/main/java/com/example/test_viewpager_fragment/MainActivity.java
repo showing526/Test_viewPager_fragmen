@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -14,6 +15,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener {
@@ -23,12 +26,24 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     TextView t1, t2, t3;
     View view1, view2, view3;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         context = MainActivity.this;
+        /*FragmentManager fm=getFragmentManager();
+        android.support.v4.app.FragmentTransaction transaction=fm.beginTransaction();
+
+        Intent intent=getIntent();
+        int id=intent.getIntExtra("page",-1);
+        if(id>0)
+        {
+            if(id==1)
+            {
+                transaction.replace(R.id.layout2,showFragment);
+            }
+        }*/
         initTextView();
         initPagerViewer();
 

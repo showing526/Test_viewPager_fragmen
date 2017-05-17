@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\R$layout$override.class
 CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\Fragment1$override.class
 CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\MainActivity$override.class
@@ -9,3 +10,5 @@ CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\i
 CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\R$style$override.class
 CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\R$id$override.class
 CHANGED,D:\android2\Test_viewPager_fragment\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\test_viewpager_fragment\R$string$override.class
+=======
+>>>>>>> Stashed changes

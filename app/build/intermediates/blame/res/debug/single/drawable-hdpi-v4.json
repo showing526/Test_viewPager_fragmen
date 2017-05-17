@@ -12,10 +12,17 @@
         "source": "D:\\android2\\Test_viewPager_fragment\\app\\src\\main\\res\\drawable-hdpi\\back.png"
     },
     {
+        "merged": "D:\\android2\\Test_viewPager_fragment\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\heart.png",
+        "source": "D:\\android2\\Test_viewPager_fragment\\app\\src\\main\\res\\drawable-hdpi\\heart.png"
+    },
+    {
+<<<<<<< Updated upstream
+=======
         "merged": "D:\\android2\\Test_viewPager_fragment\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\a.jpg",
         "source": "D:\\android2\\Test_viewPager_fragment\\app\\src\\main\\res\\drawable-hdpi\\a.jpg"
     },
     {
+>>>>>>> Stashed changes
         "merged": "D:\\android2\\Test_viewPager_fragment\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\name.png",
         "source": "D:\\android2\\Test_viewPager_fragment\\app\\src\\main\\res\\drawable-hdpi\\name.png"
     },
